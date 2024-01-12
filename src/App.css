@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background: radial-gradient(circle at center, #0000ff, #ff0000);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 3rem;
+  font-family: bungee spice;
+}
+
+.theButtons {
+  /* border: 2px solid red; */
+  width: 20%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  font-size: 20px;
+  padding: 9px 10px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+#button1 {
+  background: green;
+}
+
+#button2 {
+  background-color: red;
+  transition: transform .5s;
+}
+
+#button1:active {
+  transform: scale(0.98);
+}
+
+#button2:active {
+  transform: scale(0.98);
+}
+
+@media (width < 361px) {
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .theButtons {
+    width: 100%;
+    /* border: 2px solid white; */
+    justify-content: space-around;
+  }
+}
+
+/* #root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
